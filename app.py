@@ -5,7 +5,7 @@ from keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
 import streamlit as st
 
-model = load_model('C:\Users\ARYAN\Desktop\ML Model\Bitcoin_Price_prediction_Model.keras')
+model = load_model('Bitcoin_Price_prediction_Model.keras')
 
 
 st.header('Bitcoin Price Prediction Model')
