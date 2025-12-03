@@ -16,7 +16,7 @@ st.write(data)
 
 
 st.subheader('Bitcoin Line Chart')
-data.drop(columns = ['Date','Open','High','Low','Adj Close','Volume'], inplace=True)
+data.drop(columns = ['Date','Open','High','Low','Volume'], inplace=True)
 st.line_chart(data)
 
 train_data = data[:-100]
@@ -68,3 +68,4 @@ st.subheader('Predicted Future Days Bitcoin Price')
 z = np.array(z)
 z = scaler.inverse_transform(z.reshape(-1,1))
 st.line_chart(z)
+
